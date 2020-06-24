@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Nav, NavItem, NavLink } from 'reactstrap'
-import NewApartment from "./pages/NewApartment"
+import NewApartment from "./NewApartment"
 
 
 

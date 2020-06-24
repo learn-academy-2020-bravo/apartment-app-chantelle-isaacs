@@ -2007,3 +2007,631 @@ Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learnac
 Completed 200 OK in 6649ms (Views: 6584.8ms | ActiveRecord: 62.2ms | Allocations: 22818)
 
 
+  [1m[36mApartment Load (1.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-06-24 10:14:51 -0700
+  [1m[35m (22.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (20.7ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 88.3ms | Allocations: 15377)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 215ms (Views: 164.7ms | ActiveRecord: 37.9ms | Allocations: 32307)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:16:06 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (18.1ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 84.1ms | Allocations: 13857)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e90e2c59076cabbcca24
+Version: webpack 4.43.0
+Time: 11892ms
+Built at: 06/24/2020 10:16:21 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-df74ee8f6e817fa4e97a.js  2.14 MiB       application  [emitted] [immutable]  application
+     js/application-df74ee8f6e817fa4e97a.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-71a6f38e65f5981dddee.js  2.02 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-71a6f38e65f5981dddee.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-df74ee8f6e817fa4e97a.js js/application-df74ee8f6e817fa4e97a.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-71a6f38e65f5981dddee.js js/server_rendering-71a6f38e65f5981dddee.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 195 hidden modules
+
+ERROR in ./app/javascript/components/pages/Home.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/Home.js 26:0-48
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 14700ms (Views: 14652.2ms | ActiveRecord: 43.5ms | Allocations: 22906)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:20:00 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (15.0ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 112.3ms | Allocations: 13833)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: de215931fa745a2850d2
+Version: webpack 4.43.0
+Time: 3728ms
+Built at: 06/24/2020 10:20:06 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-14b9abb399ab521dc9bc.js  2.14 MiB       application  [emitted] [immutable]  application
+     js/application-14b9abb399ab521dc9bc.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-62e7590ebc9db6eeb96a.js  2.02 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-62e7590ebc9db6eeb96a.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-14b9abb399ab521dc9bc.js js/application-14b9abb399ab521dc9bc.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-62e7590ebc9db6eeb96a.js js/server_rendering-62e7590ebc9db6eeb96a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 195 hidden modules
+
+ERROR in ./app/javascript/components/pages/Home.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/Home.js 26:0-48
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve '/pages/NewApartment' in '/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components'
+ @ ./app/javascript/components/App.js 26:0-47
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+Completed 200 OK in 6402ms (Views: 6345.6ms | ActiveRecord: 52.8ms | Allocations: 22835)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:20:27 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (0.7ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 49.2ms | Allocations: 13808)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 35ef74d57a590d491c00
+Version: webpack 4.43.0
+Time: 3187ms
+Built at: 06/24/2020 10:20:32 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-8912e1d689db094db72e.js  2.14 MiB       application  [emitted] [immutable]  application
+     js/application-8912e1d689db094db72e.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-678e7df8799e47e0e9de.js  2.02 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-678e7df8799e47e0e9de.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-8912e1d689db094db72e.js js/application-8912e1d689db094db72e.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-678e7df8799e47e0e9de.js js/server_rendering-678e7df8799e47e0e9de.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 195 hidden modules
+
+ERROR in ./app/javascript/components/pages/Home.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/Home.js 26:0-48
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve '/pages/NewApartment.js' in '/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components'
+ @ ./app/javascript/components/App.js 26:0-50
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 4845ms (Views: 4821.6ms | ActiveRecord: 20.0ms | Allocations: 22844)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:22:32 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (21.8ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 67.3ms | Allocations: 13842)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 0bb6646e994250f565ae
+Version: webpack 4.43.0
+Time: 3870ms
+Built at: 06/24/2020 10:22:38 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-7e04a6eb1c7955ffd55c.js  2.14 MiB       application  [emitted] [immutable]  application
+     js/application-7e04a6eb1c7955ffd55c.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-fb344781b5dab7b92840.js  2.03 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-fb344781b5dab7b92840.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-7e04a6eb1c7955ffd55c.js js/application-7e04a6eb1c7955ffd55c.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-fb344781b5dab7b92840.js js/server_rendering-fb344781b5dab7b92840.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 195 hidden modules
+
+ERROR in ./app/javascript/components/pages/Home.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/Home.js 26:0-48
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+Completed 200 OK in 5867ms (Views: 5833.9ms | ActiveRecord: 31.7ms | Allocations: 22842)
+
+
+Started GET "/apartments/new" for ::1 at 2020-06-24 10:23:15 -0700
+Processing by ApartmentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering apartments/new.html.erb within layouts/application
+  Rendered apartments/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 238)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 20.3ms | ActiveRecord: 0.6ms | Allocations: 10583)
+
+
+Started GET "/apartments/new?street_num=&city=&state=&zip=&country=&mgr_name=&mgr_phone=&contact_hours=&description=&picture_url=" for ::1 at 2020-06-24 10:23:54 -0700
+Processing by ApartmentsController#new as HTML
+  Parameters: {"street_num"=>"", "city"=>"", "state"=>"", "zip"=>"", "country"=>"", "mgr_name"=>"", "mgr_phone"=>"", "contact_hours"=>"", "description"=>"", "picture_url"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering apartments/new.html.erb within layouts/application
+  Rendered apartments/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 137)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.3ms | Allocations: 9121)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:25:05 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (13.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 1143)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 49.5ms | ActiveRecord: 13.1ms | Allocations: 9582)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:27:54 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (0.8ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 2336)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 1.6ms | Allocations: 10794)
+
+
+Started GET "/apartments/new" for ::1 at 2020-06-24 10:28:26 -0700
+Processing by ApartmentsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering apartments/new.html.erb within layouts/application
+  Rendered apartments/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 229)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 30.9ms | ActiveRecord: 1.1ms | Allocations: 9766)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:28:35 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (0.6ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2233)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 1.1ms | Allocations: 9772)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:29:11 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (16.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 56.0ms | Allocations: 13856)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 6189fb84f822c9b72630
+Version: webpack 4.43.0
+Time: 3923ms
+Built at: 06/24/2020 10:29:17 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-559b6a3faafbec2ea3fd.js  2.14 MiB       application  [emitted] [immutable]  application
+     js/application-559b6a3faafbec2ea3fd.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-60707c9e0d7cc35273d3.js  2.02 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-60707c9e0d7cc35273d3.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-559b6a3faafbec2ea3fd.js js/application-559b6a3faafbec2ea3fd.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-60707c9e0d7cc35273d3.js js/server_rendering-60707c9e0d7cc35273d3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 195 hidden modules
+
+ERROR in ./app/javascript/components/pages/Home.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/Home.js 26:0-48
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 6443ms (Views: 6416.3ms | ActiveRecord: 24.0ms | Allocations: 22845)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:29:51 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (18.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 62.3ms | Allocations: 13797)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 6778fd935a6ccb42c170
+Version: webpack 4.43.0
+Time: 4129ms
+Built at: 06/24/2020 10:29:57 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-ce090f20d89a0b24087b.js  2.14 MiB       application  [emitted] [immutable]  application
+     js/application-ce090f20d89a0b24087b.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-15e7079b67851081c611.js  2.02 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-15e7079b67851081c611.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-ce090f20d89a0b24087b.js js/application-ce090f20d89a0b24087b.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-15e7079b67851081c611.js js/server_rendering-15e7079b67851081c611.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 195 hidden modules
+
+ERROR in ./app/javascript/components/pages/Home.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/Home.js 26:0-48
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 6381ms (Views: 6348.4ms | ActiveRecord: 29.7ms | Allocations: 22773)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:32:27 -0700
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (19.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 88.4ms | Allocations: 15376)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 162ms (Views: 109.8ms | ActiveRecord: 40.5ms | Allocations: 32282)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:36:53 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (17.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 89.0ms | Allocations: 15380)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: b62f8c27b7ed9204f762
+Version: webpack 4.43.0
+Time: 8851ms
+Built at: 06/24/2020 10:37:06 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-6b3f55f9f8a9075a08ca.js  2.15 MiB       application  [emitted] [immutable]  application
+     js/application-6b3f55f9f8a9075a08ca.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-1d400d32394ca74502c8.js  2.03 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-1d400d32394ca74502c8.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-6b3f55f9f8a9075a08ca.js js/application-6b3f55f9f8a9075a08ca.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-1d400d32394ca74502c8.js js/server_rendering-1d400d32394ca74502c8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 196 hidden modules
+
+ERROR in ./app/javascript/components/pages/Home.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/Home.js 26:0-48
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 12791ms (Views: 12745.0ms | ActiveRecord: 34.2ms | Allocations: 33533)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:39:56 -0700
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (21.3ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 82.0ms | Allocations: 15376)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: b6407142df95ec050b4d
+Version: webpack 4.43.0
+Time: 3749ms
+Built at: 06/24/2020 10:40:02 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-5e874c7e9d5816aa8f93.js  2.14 MiB       application  [emitted] [immutable]  application
+     js/application-5e874c7e9d5816aa8f93.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-eb65579958c3a2f17eda.js  2.02 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-eb65579958c3a2f17eda.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-5e874c7e9d5816aa8f93.js js/application-5e874c7e9d5816aa8f93.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-eb65579958c3a2f17eda.js js/server_rendering-eb65579958c3a2f17eda.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 196 hidden modules
+
+Completed 200 OK in 5940ms (Views: 5893.4ms | ActiveRecord: 34.5ms | Allocations: 33589)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:40:27 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (23.2ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 65.5ms | Allocations: 13835)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: 59370a7bdb9dbaa22942
+Version: webpack 4.43.0
+Time: 3877ms
+Built at: 06/24/2020 10:40:33 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-6cf75304fdd20c2aae7c.js  2.14 MiB       application  [emitted] [immutable]  application
+     js/application-6cf75304fdd20c2aae7c.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-e0f293119a4868553a84.js  2.02 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-e0f293119a4868553a84.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-6cf75304fdd20c2aae7c.js js/application-6cf75304fdd20c2aae7c.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-e0f293119a4868553a84.js js/server_rendering-e0f293119a4868553a84.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 196 hidden modules
+
+Completed 200 OK in 5808ms (Views: 5774.8ms | ActiveRecord: 31.2ms | Allocations: 22903)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:41:11 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (0.3ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 45.4ms | Allocations: 13815)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: ae620d80bafb3ea59e05
+Version: webpack 4.43.0
+Time: 3738ms
+Built at: 06/24/2020 10:41:16 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-8159a1bd98a461bac2e0.js  2.14 MiB       application  [emitted] [immutable]  application
+     js/application-8159a1bd98a461bac2e0.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-e2b32d152b926fb4102d.js  2.03 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-e2b32d152b926fb4102d.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-8159a1bd98a461bac2e0.js js/application-8159a1bd98a461bac2e0.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-e2b32d152b926fb4102d.js js/server_rendering-e2b32d152b926fb4102d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 196 hidden modules
+
+Completed 200 OK in 5314ms (Views: 5294.5ms | ActiveRecord: 17.6ms | Allocations: 22799)
+
+
+Started GET "/apartments/new" for ::1 at 2020-06-24 10:42:11 -0700
+Processing by ApartmentsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering apartments/new.html.erb within layouts/application
+  Rendered apartments/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 241)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 95efc0c34b6ab317f1aa
+Version: webpack 4.43.0
+Time: 3194ms
+Built at: 06/24/2020 10:42:16 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-2b65d317256deb69f38c.js  2.15 MiB       application  [emitted] [immutable]  application
+     js/application-2b65d317256deb69f38c.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-810afa7b870b1f28b738.js  2.03 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-810afa7b870b1f28b738.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-2b65d317256deb69f38c.js js/application-2b65d317256deb69f38c.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-810afa7b870b1f28b738.js js/server_rendering-810afa7b870b1f28b738.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 196 hidden modules
+
+ERROR in ./app/javascript/components/pages/Home.js
+Module not found: Error: Can't resolve 'NewApartment' in '/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/Home.js 26:0-40
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 4650ms (Views: 4604.5ms | ActiveRecord: 21.1ms | Allocations: 16043)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:42:27 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (24.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (0.8ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 67.5ms | Allocations: 9540)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 54.1ms | ActiveRecord: 31.5ms | Allocations: 17290)
+
+
+Started GET "/" for ::1 at 2020-06-24 10:42:52 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mApartment Load (17.6ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 109.0ms | Allocations: 13832)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: 3776b77c0e89a95152a4
+Version: webpack 4.43.0
+Time: 3820ms
+Built at: 06/24/2020 10:42:57 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-a7a4aa9eca0794edc17f.js  2.15 MiB       application  [emitted] [immutable]  application
+     js/application-a7a4aa9eca0794edc17f.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-8abbc6973eb6a2174ceb.js  2.03 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-8abbc6973eb6a2174ceb.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-a7a4aa9eca0794edc17f.js js/application-a7a4aa9eca0794edc17f.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-8abbc6973eb6a2174ceb.js js/server_rendering-8abbc6973eb6a2174ceb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 273 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 196 hidden modules
+
+Completed 200 OK in 5408ms (Views: 5345.2ms | ActiveRecord: 60.8ms | Allocations: 22907)
+
+

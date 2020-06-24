@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Nav, NavItem, NavLink } from 'reactstrap'
 import NewApartment from "./pages/NewApartment"
@@ -16,9 +16,8 @@ class App extends React.Component {
 
     return (
       <Router>
-        <div>
         <h1>Apartments for Rent</h1>
-        {/* <Nav className="nav-bar">
+         <Nav className="nav-bar">
         {logged_in &&
           <NavItem>
             <NavLink href={sign_out_route} tag={ Link }>Sign Out</NavLink>
@@ -41,8 +40,7 @@ class App extends React.Component {
         }
         </Nav>
         <Route path="/apartments/new" exact component={ NewApartment }/>
-        <Route path="/apartments/" exact component={ Home }/> */}
-      </div>
+        <Route path="/apartments/" exact component={ Home }/> 
       </Router>
     );
   }
