@@ -3,13 +3,45 @@ import { Button, Form, FormGroup, Label, Input, FormText, Container } from 'reac
 
 
 class NewApartment extends React.Component {
-  render () {
-    const {
-      logged_in,
-      sign_in_route,
-      sign_out_route
-    } = this.props
+  constructor(props){
+    super(props)
+    this.state={
+        form:{
+          street_num:"",
+          city:"", 
+          state:"", 
+          zip:"",
+          country:"", 
+          mgr_name:"", 
+          mgr_phone:"",
+          contact_hours:"",
+          user_id:"", 
+          description:"",
+          picture_url:""
+        },
+        success:false
+    }
 
+  }
+  const handleChange = (e) => {
+    e.preventDefault()
+    this.setState
+  }
+  
+  pushApartment = (newApt) => {
+      fetch("/apartments", {
+        body: JSON.stringify({this.setState(form:newApt)})
+      })
+      .then((response)=>{
+        if(response.status === 200){
+          return(response.json())
+        }
+      })
+      .then((aptInfo) => {
+        this.setState({apartment: aptInfo})
+      })
+  }
+  render () {
     return (
       <>
       <Container>
