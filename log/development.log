@@ -7595,3 +7595,815 @@ Processing by ApartmentsController#index as */*
 Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1522)
 
 
+Started GET "/newapartment" for ::1 at 2020-06-25 22:18:23 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 5265)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: 76f5788a19b116043c33
+Version: webpack 4.43.0
+Time: 3707ms
+Built at: 06/25/2020 10:18:30 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-96dabc33a87ae23984b2.js  2.16 MiB       application  [emitted] [immutable]  application
+     js/application-96dabc33a87ae23984b2.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-06c4e085ac648078afb5.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-06c4e085ac648078afb5.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-96dabc33a87ae23984b2.js js/application-96dabc33a87ae23984b2.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-06c4e085ac648078afb5.js js/server_rendering-06c4e085ac648078afb5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 6888ms (Views: 6880.6ms | ActiveRecord: 3.8ms | Allocations: 14393)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:18:31 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (22.1ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 52ms (Views: 28.4ms | ActiveRecord: 22.1ms | Allocations: 8589)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:18:31 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.5ms | Allocations: 1515)
+
+
+Started GET "/newapartment" for ::1 at 2020-06-25 22:19:37 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1041)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 1.4ms | Allocations: 8568)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:19:38 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (1.1ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.1ms | Allocations: 1508)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:19:38 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1508)
+
+
+Started GET "/newapartment" for ::1 at 2020-06-25 22:21:14 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 55.3ms | Allocations: 5371)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: e6b7936e7687fe21433c
+Version: webpack 4.43.0
+Time: 3670ms
+Built at: 06/25/2020 10:21:21 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-58da74e105d9225441fe.js  2.16 MiB       application  [emitted] [immutable]  application
+     js/application-58da74e105d9225441fe.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-12a5774fc466cc17a5b3.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-12a5774fc466cc17a5b3.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-58da74e105d9225441fe.js js/application-58da74e105d9225441fe.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-12a5774fc466cc17a5b3.js js/server_rendering-12a5774fc466cc17a5b3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 6355ms (Views: 6324.8ms | ActiveRecord: 27.0ms | Allocations: 14496)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:21:21 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (2.1ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 32ms (Views: 24.2ms | ActiveRecord: 6.1ms | Allocations: 8875)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:21:21 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.3ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1518)
+
+
+Started GET "/newapartment" for ::1 at 2020-06-25 22:32:09 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 5237)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: 4086a869f7603becf4a5
+Version: webpack 4.43.0
+Time: 3704ms
+Built at: 06/25/2020 10:32:16 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-887a952b0c7f6bda66ab.js  2.16 MiB       application  [emitted] [immutable]  application
+     js/application-887a952b0c7f6bda66ab.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-dbdd581fc5191886cb6b.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-dbdd581fc5191886cb6b.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-887a952b0c7f6bda66ab.js js/application-887a952b0c7f6bda66ab.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-dbdd581fc5191886cb6b.js js/server_rendering-dbdd581fc5191886cb6b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 6401ms (Views: 6397.6ms | ActiveRecord: 1.0ms | Allocations: 14361)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:32:16 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (2.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 2.4ms | Allocations: 8613)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:32:16 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 1523)
+
+
+Started GET "/newapartment" for ::1 at 2020-06-25 22:36:40 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 30.4ms | Allocations: 5339)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: 7aaa17d2f86936f3678c
+Version: webpack 4.43.0
+Time: 4083ms
+Built at: 06/25/2020 10:36:47 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-3bdc2327748bf8505ed5.js  2.14 MiB       application  [emitted] [immutable]  application
+     js/application-3bdc2327748bf8505ed5.js.map  2.13 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-cd4730bf8543af5e21bf.js  2.03 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-cd4730bf8543af5e21bf.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-3bdc2327748bf8505ed5.js js/application-3bdc2327748bf8505ed5.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-cd4730bf8543af5e21bf.js js/server_rendering-cd4730bf8543af5e21bf.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/app/javascript/components/pages/NewApartment.js: Unexpected token (28:25)
+
+  26 |     
+  27 |     this.setState({
+> 28 |       ...this.state.form.[e.target.name]: e.target.value
+     |                          ^
+  29 |     })
+  30 |     e.preventDefault()
+  31 |   }
+    at Object._raise (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:754:17)
+    at Object.raiseWithData (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:747:17)
+    at Object.raise (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:741:17)
+    at Object.unexpected (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:8844:16)
+    at Object.parseIdentifierName (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:10860:18)
+    at Object.parseIdentifier (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:10837:23)
+    at Object.parseMaybePrivateName (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:10194:19)
+    at Object.parseSubscript (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9751:64)
+    at Object.parseSubscripts (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9716:19)
+    at Object.parseExprSubscripts (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9699:17)
+    at Object.parseMaybeUnary (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9673:21)
+    at Object.parseExprOps (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9543:23)
+    at Object.parseMaybeConditional (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9516:23)
+    at Object.parseMaybeAssign (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9471:21)
+    at Object.parseSpread (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9183:26)
+    at Object.parseObjectMember (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:10542:19)
+    at Object.parseObj (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:10485:25)
+    at Object.parseExprAtom (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:10092:28)
+    at Object.parseExprAtom (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:4658:20)
+    at Object.parseExprSubscripts (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9693:23)
+    at Object.parseMaybeUnary (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9673:21)
+    at Object.parseExprOps (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9543:23)
+    at Object.parseMaybeConditional (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9516:23)
+    at Object.parseMaybeAssign (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9471:21)
+    at Object.parseExprListItem (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:10829:18)
+    at Object.parseCallExpressionArguments (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9887:22)
+    at Object.parseSubscript (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9787:31)
+    at Object.parseSubscripts (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9716:19)
+    at Object.parseExprSubscripts (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9699:17)
+    at Object.parseMaybeUnary (/Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/node_modules/@babel/parser/lib/index.js:9673:21)
+ @ ./app/javascript/components sync ^\.\/.*$ ./pages/NewApartment.js
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 6807ms (Views: 6791.3ms | ActiveRecord: 13.4ms | Allocations: 14457)
+
+
+Started GET "/newapartment" for ::1 at 2020-06-25 22:38:58 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 5350)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: a5c51e24f68260fe53a0
+Version: webpack 4.43.0
+Time: 3522ms
+Built at: 06/25/2020 10:39:04 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-a4098c9dd2ee1b375e5c.js  2.15 MiB       application  [emitted] [immutable]  application
+     js/application-a4098c9dd2ee1b375e5c.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-e0bb79e48a8c6fecac07.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-e0bb79e48a8c6fecac07.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-a4098c9dd2ee1b375e5c.js js/application-a4098c9dd2ee1b375e5c.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-e0bb79e48a8c6fecac07.js js/server_rendering-e0bb79e48a8c6fecac07.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 5810ms (Views: 5801.4ms | ActiveRecord: 5.6ms | Allocations: 14471)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:39:04 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (3.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 101ms (Views: 26.3ms | ActiveRecord: 73.8ms | Allocations: 8851)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:39:04 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.6ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.6ms | Allocations: 1510)
+
+
+Started GET "/newapartment" for ::1 at 2020-06-25 22:41:53 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 5332)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: 99941371fa1a6e43bf7e
+Version: webpack 4.43.0
+Time: 3768ms
+Built at: 06/25/2020 10:41:59 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-79781fbe654d5442d607.js  2.15 MiB       application  [emitted] [immutable]  application
+     js/application-79781fbe654d5442d607.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-d613aae254472061d671.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-d613aae254472061d671.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-79781fbe654d5442d607.js js/application-79781fbe654d5442d607.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-d613aae254472061d671.js js/server_rendering-d613aae254472061d671.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 6378ms (Views: 6372.3ms | ActiveRecord: 3.8ms | Allocations: 14464)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:42:00 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (22.6ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 56ms (Views: 28.4ms | ActiveRecord: 26.5ms | Allocations: 8852)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:42:00 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1510)
+
+
+Started GET "/newapartment" for ::1 at 2020-06-25 22:45:07 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 5332)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: fcf95652d641d1e81352
+Version: webpack 4.43.0
+Time: 3676ms
+Built at: 06/25/2020 10:45:13 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-188fcde228c0bb703f55.js  2.15 MiB       application  [emitted] [immutable]  application
+     js/application-188fcde228c0bb703f55.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-7725cfc6ca394e7427b2.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-7725cfc6ca394e7427b2.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-188fcde228c0bb703f55.js js/application-188fcde228c0bb703f55.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-7725cfc6ca394e7427b2.js js/server_rendering-7725cfc6ca394e7427b2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 6324ms (Views: 6316.3ms | ActiveRecord: 5.5ms | Allocations: 14468)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:45:14 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (25.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 121ms (Views: 30.6ms | ActiveRecord: 88.5ms | Allocations: 8848)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:45:14 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.4ms | Allocations: 1507)
+
+
+Started GET "/newapartment" for ::1 at 2020-06-25 22:47:16 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 5348)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: fc9833bebf70dca536b7
+Version: webpack 4.43.0
+Time: 3569ms
+Built at: 06/25/2020 10:47:22 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-ef6887ab4e3b9ac71d06.js  2.16 MiB       application  [emitted] [immutable]  application
+     js/application-ef6887ab4e3b9ac71d06.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-dc55d634ada09348eb15.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-dc55d634ada09348eb15.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-ef6887ab4e3b9ac71d06.js js/application-ef6887ab4e3b9ac71d06.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-dc55d634ada09348eb15.js js/server_rendering-dc55d634ada09348eb15.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 6200ms (Views: 6192.6ms | ActiveRecord: 5.0ms | Allocations: 14479)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:47:22 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 47ms (Views: 41.0ms | ActiveRecord: 4.6ms | Allocations: 8855)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:47:23 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 1514)
+
+
+Started GET "/newapartment" for ::1 at 2020-06-25 22:48:10 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 5356)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: 24eb60bec01e710058b0
+Version: webpack 4.43.0
+Time: 3569ms
+Built at: 06/25/2020 10:48:17 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-aae896bcebadfe058ed5.js  2.16 MiB       application  [emitted] [immutable]  application
+     js/application-aae896bcebadfe058ed5.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-934e214e542e729da567.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-934e214e542e729da567.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-aae896bcebadfe058ed5.js js/application-aae896bcebadfe058ed5.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-934e214e542e729da567.js js/server_rendering-934e214e542e729da567.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 6324ms (Views: 6316.8ms | ActiveRecord: 4.3ms | Allocations: 14488)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:48:17 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (39.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 84ms (Views: 32.3ms | ActiveRecord: 50.6ms | Allocations: 8851)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:48:17 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (19.7ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 3.1ms | ActiveRecord: 19.7ms | Allocations: 1510)
+
+
+Started POST "/apartments" for ::1 at 2020-06-25 22:48:19 -0700
+Processing by ApartmentsController#create as */*
+  Parameters: {"street_num"=>"", "city"=>"", "state"=>"", "zip"=>"", "country"=>"", "mgr_name"=>"", "mgr_phone"=>"", "contact_hours"=>"", "user_id"=>"", "description"=>"", "picture_url"=>"", "apartment"=>{"street_num"=>"", "city"=>"", "state"=>"", "zip"=>"", "country"=>"", "mgr_name"=>"", "mgr_phone"=>"", "contact_hours"=>"", "user_id"=>"", "description"=>"", "picture_url"=>""}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+  [1m[36mApartment Create (29.4ms)[0m  [1m[32mINSERT INTO "apartments" ("street_num", "city", "state", "zip", "country", "mgr_name", "mgr_phone", "contact_hours", "created_at", "updated_at", "description", "picture_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["street_num", ""], ["city", ""], ["state", ""], ["zip", ""], ["country", ""], ["mgr_name", ""], ["mgr_phone", ""], ["contact_hours", ""], ["created_at", "2020-06-26 05:48:19.650571"], ["updated_at", "2020-06-26 05:48:19.650571"], ["description", ""], ["picture_url", ""]]
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+Completed 200 OK in 64ms (Views: 1.0ms | ActiveRecord: 37.4ms | Allocations: 5230)
+
+
+  [1m[36mApartment Load (0.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" ORDER BY "apartments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApartment Destroy (3.6ms)[0m  [1m[31mDELETE FROM "apartments" WHERE "apartments"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/apartments" for ::1 at 2020-06-25 22:49:58 -0700
+Processing by ApartmentsController#create as */*
+  Parameters: {"street_num"=>"11749 Auburn Ave", "city"=>"Yucaipa", "state"=>"California", "zip"=>"92399", "country"=>"USA", "mgr_name"=>"Grandpa", "mgr_phone"=>"9097056257", "contact_hours"=>"1pm-3pm", "user_id"=>"", "description"=>"Guest room in home. ", "picture_url"=>"https://www.dogster.com/wp-content/uploads/2015/06/happy-pug-on-floor.jpg", "apartment"=>{"street_num"=>"11749 Auburn Ave", "city"=>"Yucaipa", "state"=>"California", "zip"=>"92399", "country"=>"USA", "mgr_name"=>"Grandpa", "mgr_phone"=>"9097056257", "contact_hours"=>"1pm-3pm", "user_id"=>"", "description"=>"Guest room in home. ", "picture_url"=>"https://www.dogster.com/wp-content/uploads/2015/06/happy-pug-on-floor.jpg"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+  [1m[36mApartment Create (0.6ms)[0m  [1m[32mINSERT INTO "apartments" ("street_num", "city", "state", "zip", "country", "mgr_name", "mgr_phone", "contact_hours", "created_at", "updated_at", "description", "picture_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["street_num", "11749 Auburn Ave"], ["city", "Yucaipa"], ["state", "California"], ["zip", "92399"], ["country", "USA"], ["mgr_name", "Grandpa"], ["mgr_phone", "9097056257"], ["contact_hours", "1pm-3pm"], ["created_at", "2020-06-26 05:49:58.241469"], ["updated_at", "2020-06-26 05:49:58.241469"], ["description", "Guest room in home. "], ["picture_url", "https://www.dogster.com/wp-content/uploads/2015/06/happy-pug-on-floor.jpg"]]
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 2.1ms | Allocations: 4581)
+
+
+Started GET "/" for ::1 at 2020-06-25 22:50:16 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.3ms | Allocations: 8542)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:50:16 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (4.8ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 4.8ms | Allocations: 1738)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:50:16 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.8ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.8ms | Allocations: 1738)
+
+
+Started GET "/apartmentview/4" for ::1 at 2020-06-25 22:50:32 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"apartmentview/4"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1041)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 1.3ms | Allocations: 8570)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:50:32 -0700
+Started GET "/apartments/4" for ::1 at 2020-06-25 22:50:32 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (1.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 1.5ms | Allocations: 1716)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:50:32 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 1716)
+
+
+Processing by ApartmentsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/apartments_controller.rb:10:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 1317)
+
+
+Started GET "/apartments/4" for ::1 at 2020-06-25 22:50:32 -0700
+Processing by ApartmentsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" WHERE "apartments"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/apartments_controller.rb:10:in `show'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 1065)
+
+
+Started GET "/" for ::1 at 2020-06-25 22:52:24 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 5474)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: 24d32d46a6f656d48186
+Version: webpack 4.43.0
+Time: 3617ms
+Built at: 06/25/2020 10:52:30 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-5d8da985aed4e63cfc7d.js  2.16 MiB       application  [emitted] [immutable]  application
+     js/application-5d8da985aed4e63cfc7d.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-582c41fe959069dcace3.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-582c41fe959069dcace3.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-5d8da985aed4e63cfc7d.js js/application-5d8da985aed4e63cfc7d.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-582c41fe959069dcace3.js js/server_rendering-582c41fe959069dcace3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 6486ms (Views: 6473.5ms | ActiveRecord: 9.9ms | Allocations: 14567)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:52:31 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 49ms (Views: 43.2ms | ActiveRecord: 4.1ms | Allocations: 9130)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:52:31 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 1743)
+
+
+Started GET "/" for ::1 at 2020-06-25 22:53:34 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 5314)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: 5da79d11b25a4619716b
+Version: webpack 4.43.0
+Time: 3641ms
+Built at: 06/25/2020 10:53:40 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-c3691df052a1610b6f61.js  2.16 MiB       application  [emitted] [immutable]  application
+     js/application-c3691df052a1610b6f61.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-416126dfb060c3e74755.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-416126dfb060c3e74755.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-c3691df052a1610b6f61.js js/application-c3691df052a1610b6f61.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-416126dfb060c3e74755.js js/server_rendering-416126dfb060c3e74755.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 5883ms (Views: 5877.1ms | ActiveRecord: 3.7ms | Allocations: 14422)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:53:41 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (10.1ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 54ms (Views: 38.3ms | ActiveRecord: 14.8ms | Allocations: 9070)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:53:41 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (2.2ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 2.2ms | Allocations: 1728)
+
+
+Started POST "/apartments" for ::1 at 2020-06-25 22:53:50 -0700
+Processing by ApartmentsController#create as */*
+  Parameters: {"street_num"=>"", "city"=>"", "state"=>"", "zip"=>"", "country"=>"", "mgr_name"=>"", "mgr_phone"=>"", "contact_hours"=>"", "user_id"=>"", "description"=>"", "picture_url"=>"", "apartment"=>{"street_num"=>"", "city"=>"", "state"=>"", "zip"=>"", "country"=>"", "mgr_name"=>"", "mgr_phone"=>"", "contact_hours"=>"", "user_id"=>"", "description"=>"", "picture_url"=>""}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+  [1m[36mApartment Create (1.3ms)[0m  [1m[32mINSERT INTO "apartments" ("street_num", "city", "state", "zip", "country", "mgr_name", "mgr_phone", "contact_hours", "created_at", "updated_at", "description", "picture_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["street_num", ""], ["city", ""], ["state", ""], ["zip", ""], ["country", ""], ["mgr_name", ""], ["mgr_phone", ""], ["contact_hours", ""], ["created_at", "2020-06-26 05:53:50.858977"], ["updated_at", "2020-06-26 05:53:50.858977"], ["description", ""], ["picture_url", ""]]
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+Completed 200 OK in 25ms (Views: 0.8ms | ActiveRecord: 4.5ms | Allocations: 5216)
+
+
+Started GET "/newapartment" for ::1 at 2020-06-25 22:54:45 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"newapartment"}
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 5348)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/apartment-app-chantelle-isaacs/public/packs
+[Webpacker] Hash: 8bf973eba7c1f3979d7e
+Version: webpack 4.43.0
+Time: 3697ms
+Built at: 06/25/2020 10:54:52 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-3ce3d26ca1bb59302359.js  2.16 MiB       application  [emitted] [immutable]  application
+     js/application-3ce3d26ca1bb59302359.js.map  2.14 MiB       application  [emitted] [dev]        application
+         js/hello_react-0065f8897cdfe5659bce.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-0065f8897cdfe5659bce.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-c5b3ecf58816714138f0.js  2.04 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-c5b3ecf58816714138f0.js.map     2 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-3ce3d26ca1bb59302359.js js/application-3ce3d26ca1bb59302359.js.map
+Entrypoint hello_react = js/hello_react-0065f8897cdfe5659bce.js js/hello_react-0065f8897cdfe5659bce.js.map
+Entrypoint server_rendering = js/server_rendering-c5b3ecf58816714138f0.js js/server_rendering-c5b3ecf58816714138f0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 397 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 198 hidden modules
+
+Completed 200 OK in 6453ms (Views: 6442.8ms | ActiveRecord: 5.9ms | Allocations: 14482)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:54:52 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 68ms (Views: 38.4ms | ActiveRecord: 27.4ms | Allocations: 9314)
+
+
+Started GET "/apartments" for ::1 at 2020-06-25 22:54:53 -0700
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.6ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.6ms | Allocations: 1956)
+
+
+Started POST "/apartments" for ::1 at 2020-06-25 22:54:56 -0700
+Processing by ApartmentsController#create as */*
+  Parameters: {"street_num"=>"", "city"=>"", "state"=>"", "zip"=>"", "country"=>"", "mgr_name"=>"", "mgr_phone"=>"", "contact_hours"=>"", "user_id"=>"", "description"=>"", "picture_url"=>"", "apartment"=>{"street_num"=>"", "city"=>"", "state"=>"", "zip"=>"", "country"=>"", "mgr_name"=>"", "mgr_phone"=>"", "contact_hours"=>"", "user_id"=>"", "description"=>"", "picture_url"=>""}}
+  [1m[36mUser Load (23.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (4.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+  [1m[36mApartment Create (0.4ms)[0m  [1m[32mINSERT INTO "apartments" ("street_num", "city", "state", "zip", "country", "mgr_name", "mgr_phone", "contact_hours", "created_at", "updated_at", "description", "picture_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["street_num", ""], ["city", ""], ["state", ""], ["zip", ""], ["country", ""], ["mgr_name", ""], ["mgr_phone", ""], ["contact_hours", ""], ["created_at", "2020-06-26 05:54:56.619660"], ["updated_at", "2020-06-26 05:54:56.619660"], ["description", ""], ["picture_url", ""]]
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/apartments_controller.rb:15:in `create'
+Completed 200 OK in 44ms (Views: 0.8ms | ActiveRecord: 29.6ms | Allocations: 5223)
+
+
+  [1m[36mApartment Load (0.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mApartment Load (0.6ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" ORDER BY "apartments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApartment Destroy (0.9ms)[0m  [1m[31mDELETE FROM "apartments" WHERE "apartments"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" ORDER BY "apartments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApartment Destroy (2.1ms)[0m  [1m[31mDELETE FROM "apartments" WHERE "apartments"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApartment Load (0.8ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments" ORDER BY "apartments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mApartment Destroy (0.8ms)[0m  [1m[31mDELETE FROM "apartments" WHERE "apartments"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
